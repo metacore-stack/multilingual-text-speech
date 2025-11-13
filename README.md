@@ -1,83 +1,37 @@
 
-<p  align="center">
+# EchoCanvas: Multilingual Text-to-Speech Studio
 
-<img  src="https://res.cloudinary.com/ddcg0rzlo/image/upload/v1640340715/nextjs-tailwind-typescript-banner_vslgq4.png"  alt="Next.js TypeScript Starter">
+EchoCanvas turns any block of text into expressive audio with a polished Next.js interface. Generate previews instantly, fine-tune voice traits, and export clips ready for podcasts, voice-overs, and accessibility workflows.
 
-</p>
-
-  
-
-<br />
-
-  
-
-<div  align="center"><strong>TypeScript with Tailwind starter for Next.js</strong></div>
-
-  
-
-<br />
-
-  
-
-## Features
-
-  
-
-- ⚡️ Next.js 12
-
-- ⚛️ React 17
-
-- ⛑ TypeScript
-- <img src="https://res.cloudinary.com/ddcg0rzlo/image/upload/v1640341222/tailwindcss_nzwqt7.svg" width="" height="16" />
-- 📏 ESLint — Find and fix problems in your code
-  
-
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) (web only):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/Cyphen12/tailwind-typescript-starter&project-name=tailwind-typescript-starte&repository-name=tailwind-typescript-starte)
+## Highlights
+- Real-time speech synthesis backed by the Web Speech API
+- Responsive, keyboard-friendly controls optimized for rapid iteration
+- Voice presets with adjustable rate, pitch, and language selections
+- Persistent session history so you can revisit prior renders
 
 ## Quick Start
-
-  
-
-The best way to start with this template is using [Create Next App](https://nextjs.org/docs/api-reference/create-next-app).
-
-  
-
-```
-
-yarn create next-app -e https://github.com/Cyphen12/tailwind-typescript-starter
-
-# or
-
-npx create-next-app -e https://github.com/Cyphen12/tailwind-typescript-starter
-
-```
-
-  
-
-### Development
-
-  
-
-To start the project locally, run:
-
-  
-
 ```bash
-
+yarn install
 yarn dev
-
 ```
 
-  
+Launch the playground at `http://localhost:3000`, enter text, choose a voice preset, then press `Speak` to hear the output. Use `Download` to save the generated audio locally.
 
-Open `http://localhost:3000` with your browser to see the result.
+## Configuration
+- Update default presets in `components/WebApi.tsx`
+- Customize appearance in `styles/globals.css` or via Tailwind config
+- Set environment-specific options in `next.config.js`
 
- 
+## Tech Stack
+- Next.js for the application shell and routing
+- React hooks for stateful UI interactions
+- Tailwind CSS for rapid, consistent styling
+- TypeScript for type-safe component authoring
 
-  
-# next-js-text-to-speech
+## Roadmap Ideas
+- Offline synthesis fallback using local models
+- Batch rendering for long-form scripts
+- Clip library with tagging and search
+
+## Contributing
+Pull requests are welcome. For substantial changes, please open an issue first to discuss your ideas and align on scope.
